@@ -1,0 +1,15 @@
+torch>=2.6.0
+transformers>=4.30.0
+sentencepiece>=0.1.99
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.0
+rouge-score>=0.1.2
+nltk>=3.8.1
+sacrebleu>=2.3.0
+datasets>=2.14.0
+openai>=1.0.0
+python-dotenv>=1.0.0
+
+# Optional: Mac Foundation Model (macOS 26+ with Apple Intelligence)
+# pip install apple-foundation-models

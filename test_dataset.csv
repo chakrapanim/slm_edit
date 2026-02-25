@@ -1,0 +1,146 @@
+Category,Input_Text,Ground_Truth
+Typo,I recieved your email yesterday.,I received your email yesterday.
+Typo,The weather is beautifull today.,The weather is beautiful today.
+Typo,Please seperate the items.,Please separate the items.
+Typo,I definately agree with you.,I definitely agree with you.
+Typo,The accomodation was excellent.,The accommodation was excellent.
+Typo,We need to analize the data.,We need to analyze the data.
+Typo,This is a common occurance.,This is a common occurrence.
+Typo,The document was mispelled.,The document was misspelled.
+Typo,She was embarassed by the mistake.,She was embarrassed by the mistake.
+Typo,The calender is on the wall.,The calendar is on the wall.
+Typo,Their going to the store.,They're going to the store.
+Typo,Your welcome to join us.,You're welcome to join us.
+Typo,Its a beautiful day.,It's a beautiful day.
+Typo,The affect of the change was positive.,The effect of the change was positive.
+Typo,I except your invitation.,I accept your invitation.
+Typo,The principle of the school spoke.,The principal of the school spoke.
+Typo,I loose my keys often.,I lose my keys often.
+Typo,The dessert was delicious.,The desert was hot.
+Typo,I need advise on this matter.,I need advice on this matter.
+Typo,The weather will effect our plans.,The weather will affect our plans.
+Typo,I wil be there soon.,I will be there soon.
+Typo,Ths is important.,This is important.
+Typo,We shoud consider this option.,We should consider this option.
+Typo,The resut was unexpected.,The result was unexpected.
+Typo,Pleas send the document.,Please send the document.
+Typo,I recieeved the package.,I received the package.
+Typo,The committe will meet tomorrow.,The committee will meet tomorrow.
+Typo,She was embarassed by the error.,She was embarrassed by the error.
+Typo,The accomodation was nice.,The accommodation was nice.
+Typo,We need to analize the results.,We need to analyze the results.
+Typo,The tehcnician fixed the issue.,The technician fixed the issue.
+Typo,I recieved your message.,I received your message.
+Typo,The calender shows the date.,The calendar shows the date.
+Typo,She was embarassed.,She was embarrassed.
+Typo,The accomodation was good.,The accommodation was good.
+Typo,The buisness meeting is at 3pm.,The business meeting is at 3pm.
+Typo,I apreciate your help.,I appreciate your help.
+Typo,The enviroment is important.,The environment is important.
+Typo,We need to maintan the system.,We need to maintain the system.
+Typo,The goverment announced new policies.,The government announced new policies.
+Typo,I recomend this book.,I recommend this book.
+Typo,The seperate rooms are available.,The separate rooms are available.
+Typo,She was embarassed by the comment.,She was embarrassed by the comment.
+Typo,The calender event is scheduled.,The calendar event is scheduled.
+Typo,We need to analize the situation.,We need to analyze the situation.
+Grammar,The team are working hard.,The team is working hard.
+Grammar,The students was studying.,The students were studying.
+Grammar,Each of the employees have a desk.,Each of the employees has a desk.
+Grammar,The data are incorrect.,The data is incorrect.
+Grammar,Neither of the options are suitable.,Neither of the options is suitable.
+Grammar,Yesterday I go to the store.,Yesterday I went to the store.
+Grammar,I have saw that movie before.,I have seen that movie before.
+Grammar,She has wrote the report.,She has written the report.
+Grammar,They was waiting for the bus.,They were waiting for the bus.
+Grammar,I had went there last week.,I had gone there last week.
+Grammar,I need a advice.,I need advice.
+Grammar,She is an university student.,She is a university student.
+Grammar,The honesty is important.,Honesty is important.
+Grammar,I saw the elephant at zoo.,I saw an elephant at the zoo.
+Grammar,He is the best student in class.,He is the best student in the class.
+Grammar,I am interested on this topic.,I am interested in this topic.
+Grammar,The book is different than I expected.,The book is different from what I expected.
+Grammar,She arrived to the airport.,She arrived at the airport.
+Grammar,I agree with you in this point.,I agree with you on this point.
+Grammar,The meeting is in Monday.,The meeting is on Monday.
+Grammar,"Its a beautiful day,isnt it?","It's a beautiful day, isn't it?"
+Grammar,"I like apples, oranges, and bananas.","I like apples, oranges, and bananas."
+Grammar,"She said,Hello,how are you?","She said, ""Hello, how are you?"""
+Grammar,The meeting is at 3pm we should be ready.,The meeting is at 3pm; we should be ready.
+Grammar,"I went to the store, and bought some milk.",I went to the store and bought some milk.
+Grammar,Because I was late.,I was late.
+Grammar,Running in the park.,I was running in the park.
+Grammar,The book that I read.,I read the book.
+Grammar,After finishing the work.,"After finishing the work, I went home."
+Grammar,While waiting for the bus.,"While waiting for the bus, I read a book."
+Grammar,I went to the store I bought some milk.,I went to the store and bought some milk.
+Grammar,She is smart she works hard.,"She is smart, and she works hard."
+Grammar,The weather is nice we should go outside.,The weather is nice; we should go outside.
+Grammar,I like coffee he prefers tea.,"I like coffee, but he prefers tea."
+Grammar,It was raining we stayed inside.,"It was raining, so we stayed inside."
+Grammar,I don't have no time.,I don't have any time.
+Grammar,She can't hardly wait.,She can hardly wait.
+Grammar,I didn't see nothing.,I didn't see anything.
+Grammar,We don't need no help.,We don't need any help.
+Grammar,There isn't no reason to worry.,There isn't any reason to worry.
+Grammar,Me and John went to the store.,John and I went to the store.
+Grammar,"Between you and I, this is wrong.","Between you and me, this is wrong."
+Grammar,The teacher gave the assignment to John and I.,The teacher gave the assignment to John and me.
+Grammar,Him and me are friends.,He and I are friends.
+Grammar,She gave it to he and I.,She gave it to him and me.
+Grammar,This is more better than that.,This is better than that.
+Grammar,She is the most smartest student.,She is the smartest student.
+Grammar,This is more easier.,This is easier.
+Grammar,He is more tall than me.,He is taller than me.
+Grammar,The most biggest problem is cost.,The biggest problem is cost.
+Grammar,"If I was you, I would go.","If I were you, I would go."
+Grammar,"If he would have known, he would come.","If he had known, he would have come."
+Grammar,I wish I was there.,I wish I were there.
+Grammar,"If it was possible, I would help.","If it were possible, I would help."
+Grammar,"If I would have time, I would do it.","If I had time, I would do it."
+Rephrasing,"Due to the fact that it was raining, we stayed home.","Because it was raining, we stayed home."
+Rephrasing,"In order to complete the task, we need more time.","To complete the task, we need more time."
+Rephrasing,"At this point in time, we are ready.","Now, we are ready."
+Rephrasing,"For the purpose of saving money, we canceled the trip.","To save money, we canceled the trip."
+Rephrasing,"In the event that it rains, bring an umbrella.","If it rains, bring an umbrella."
+Rephrasing,The report was written by John.,John wrote the report.
+Rephrasing,The decision was made by the committee.,The committee made the decision.
+Rephrasing,The car was driven by Sarah.,Sarah drove the car.
+Rephrasing,The meeting was attended by all members.,All members attended the meeting.
+Rephrasing,The problem was solved by the team.,The team solved the problem.
+Rephrasing,The thing that I want to say is that we need to work harder.,We need to work harder.
+Rephrasing,It is important to note that the results are significant.,The results are significant.
+Rephrasing,There are many people who believe this.,Many people believe this.
+Rephrasing,The reason why I came is because I wanted to help.,I came because I wanted to help.
+Rephrasing,The fact of the matter is that we need to change.,We need to change.
+Rephrasing,"The book, which was written by a famous author, is very popular.",The book by a famous author is very popular.
+Rephrasing,She is a person who is very kind.,She is very kind.
+Rephrasing,"The company, which is located in New York, is expanding.",The New York-based company is expanding.
+Rephrasing,"The student, who was studying hard, passed the exam.",The hardworking student passed the exam.
+Rephrasing,"The project, which was completed on time, was successful.",The project completed on time was successful.
+Rephrasing,The final outcome was positive.,The outcome was positive.
+Rephrasing,We need to plan ahead for the future.,We need to plan for the future.
+Rephrasing,The end result was satisfactory.,The result was satisfactory.
+Rephrasing,We need to collaborate together.,We need to collaborate.
+Rephrasing,The past history shows a pattern.,The history shows a pattern.
+Rephrasing,I would like to make a request for more information.,I would like more information.
+Rephrasing,We are in the process of reviewing the documents.,We are reviewing the documents.
+Rephrasing,I am of the opinion that this is correct.,I think this is correct.
+Rephrasing,We need to have a discussion about this.,We need to discuss this.
+Rephrasing,She has the ability to solve problems.,She can solve problems.
+Rephrasing,The meeting was long. It was also boring.,The meeting was long and boring.
+Rephrasing,He is smart. He is also hardworking.,He is smart and hardworking.
+Rephrasing,The weather is nice. We should go outside.,"Since the weather is nice, we should go outside."
+Rephrasing,I was tired. I still finished the work.,"Although I was tired, I still finished the work."
+Rephrasing,She studied hard. She passed the exam.,"She studied hard, so she passed the exam."
+Rephrasing,The company is in the process of expanding its operations.,The company is expanding its operations.
+Rephrasing,We are currently working on the project.,We are working on the project.
+Rephrasing,I would like to take this opportunity to thank you.,Thank you.
+Rephrasing,It is my belief that we should proceed.,I believe we should proceed.
+Rephrasing,We are experiencing a situation where delays occur.,We are experiencing delays.
+Rephrasing,The utilization of resources is important.,Using resources efficiently is important.
+Rephrasing,We need to facilitate the process.,We need to make the process easier.
+Rephrasing,The implementation of the plan was successful.,The plan was successfully implemented.
+Rephrasing,We need to optimize our performance.,We need to improve our performance.
+Rephrasing,The demonstration of skills was impressive.,The skills demonstrated were impressive.
