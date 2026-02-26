@@ -10,6 +10,7 @@ sacrebleu>=2.3.0
 datasets>=2.14.0
 openai>=1.0.0
 python-dotenv>=1.0.0
+streamlit>=1.28.0
 
 # Optional: Mac Foundation Model (macOS 26+ with Apple Intelligence)
 # pip install apple-foundation-models
