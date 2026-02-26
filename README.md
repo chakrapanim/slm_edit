@@ -4,13 +4,28 @@ This project evaluates the `Vennify/t5-base-grammar-correction` model for proofr
 
 ## Files
 
-- `requirements.txt` - Python dependencies
-- `model_loader.py` - Downloads and loads the grammar correction model
-- `dataset_generator.py` - Generates synthetic test datasets for typos, grammar, and rephrasing
-- `evaluator.py` - Evaluation metrics calculation (BLEU, ROUGE, edit distance, etc.)
-- `main_evaluation.py` - Main script that runs the complete evaluation pipeline
-- `test_dataset.csv` - Generated test dataset with ground truth
-- `model_evaluation_report.xlsx` - Comprehensive evaluation report
+**Core evaluation**
+- `requirements.txt` - Python dependencies (including Streamlit)
+- `model_loader.py` - T5 grammar correction model (Vennify/t5-base-grammar-correction)
+- `mac_foundation_model_loader.py` - Mac Foundation Model (Apple Intelligence) for Typos / Grammar / Rephrase
+- `dataset_generator.py` / `dataset_generator_expanded.py` - Synthetic test datasets (typos, grammar, rephrasing)
+- `evaluator.py` - Metrics (BLEU, ROUGE, edit distance, exact match, etc.)
+- `main_evaluation.py` / `main_evaluation_expanded.py` - Full evaluation pipeline (T5)
+- `test_dataset.csv` / `test_dataset_expanded.csv` - Test data with ground truth and 4 refs for rephrasing
+
+**Mac vs T5 comparison**
+- `mac_evaluation_with_comparison.py` - Run Mac on 300 examples, LLM eval, compare with T5 → `mac_foundation_model_evaluation.xlsx`
+- `run_mac_rephrasing_only.py` - Mac rephrasing-only (new prompt) → `mac_rephrasing_only_results.xlsx`
+- `build_final_comparison.py` - Build T5 vs Mac (Typos/Grammar from full run, Rephrasing from new prompt) → `final_comparison.xlsx`
+
+**Paragraph rephrasing (longer text)**
+- `dataset_paragraph_rephrasing.py` - 50 paragraph examples (up to 512 tokens, 4 refs) → `paragraph_rephrasing_dataset.csv`
+- `evaluate_paragraph_rephrasing.py` - T5 + Mac + LLM on paragraphs → `paragraph_rephrasing_evaluation.xlsx`
+
+**App & utilities**
+- `app_streamlit.py` - Streamlit UI to test Mac Foundation Model (Typos / Grammar / Rephrase)
+- `llm_evaluator.py` - LLM-based scoring (1–5) via Azure OpenAI / OpenAI
+- `push_to_github.sh` - Push to GitHub (set `GITHUB_USER` and `GITHUB_TOKEN`)
 
 ## Setup
 
@@ -19,7 +34,13 @@ This project evaluates the `Vennify/t5-base-grammar-correction` model for proofr
 pip install -r requirements.txt
 ```
 
-2. Run the evaluation:
+2. Run the Streamlit app to test the Mac Foundation Model (Typos / Grammar / Rephrase) with your own text:
+```bash
+streamlit run app_streamlit.py
+```
+Requires macOS 26+ and Apple Intelligence. Use the full command `streamlit run app_streamlit.py` (not `run app_streamlit.py`).
+
+3. Run the T5 evaluation:
 ```bash
 python main_evaluation.py
 ```
@@ -130,3 +151,27 @@ Example: `"phase": "mac_model", "completed": 150, "total": 300, "message": "150/
    - **Mac_LLM_Summary** – LLM score summary by category
    - **Comparison_Table** – Side-by-side: T5 vs Mac (Exact Match, BLEU, ROUGE-L, LLM score, High Quality count) per category
    - **Comparison_Detailed** – Per-metric comparison rows (T5 vs Mac) for each category
+
+Rephrasing uses a dedicated prompt; for rephrase-only evaluation and the final comparison file, see below.
+
+### Rephrasing-only and final comparison
+
+After the full Mac run, you can re-run rephrasing with a rephrasing-specific prompt and build the final comparison:
+
+```bash
+python run_mac_rephrasing_only.py    # 100 rephrasing examples, new prompt → mac_rephrasing_only_results.xlsx
+python build_final_comparison.py     # T5 vs Mac (Typos/Grammar from full run, Rephrasing from rephrase-only) → final_comparison.xlsx
+```
+
+`final_comparison.xlsx` contains **Comparison_Table** and **LLM_Evaluation_Comparison** (avg LLM score, 4+ count, 5 count for T5 vs Mac).
+
+### Paragraph rephrasing (50 longer examples)
+
+For paragraph-length text (up to 512 tokens) with 4 reference rephrasings:
+
+```bash
+python dataset_paragraph_rephrasing.py   # optional: (re)generate paragraph_rephrasing_dataset.csv
+python evaluate_paragraph_rephrasing.py  # T5 + Mac + LLM on 50 paragraphs → paragraph_rephrasing_evaluation.xlsx
+```
+
+Output Excel: Input_Dataset, T5_Results, Mac_Results, LLM_Comparison (per example), LLM_Summary (T5 vs Mac).
